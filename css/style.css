@@ -5,17 +5,16 @@
 
 .container{
     display: flex;
-    border: 2px black solid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(69, 72, 75);
+    background-color: #191717;
     gap: 10px;
     height: 95vh;
 }
 .title{
     margin-top: 24px;
-    color: antiquewhite;
+    color: #CCC8AA;
 }
 .select-option{
     color:burlywood;
@@ -27,43 +26,81 @@
     justify-content: space-around;
     gap: 55px;
 }
-.buttons button{
-    background: none;
-    
-}
-.buttons button img{
-    height: 100px;
-}
-.display{
-    border: 1px red solid;
+.who-wins{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: -webkit-fill-available;
-    gap: 150px;
-}
-canvas{
-    border: 1px yellow solid;
+    color: #7D7C7C;
+    font-size: large;
 }
 
+.display{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    
+}
+canvas{
+    border: 5px solid #7D7C7C; 
+    background: none;
+    border-radius: 25px;
+}
 .score{
     display: flex;
     flex-direction: column;
     width: 250px;
     align-items: center;
     gap: 20px;
+    color: #7D7C7C;
 }
+
 .result{
     display: flex;
     width: 250px;
     justify-content: space-around;
 }
+
+.result .my-result{
+    display: flex;
+    
+}
+.tie{
+    display: flex;
+}
+.result .computer-result{
+    display: flex;
+}
 footer{
-    background-color: bisque;
+    background-color: #7D7C7C;
 }
 .footer{
     height: 30px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+.button-1{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.button-2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.button-2 button img{
+    width: 110px;
+    height: 110px;
+}
+.button-3{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+button{
+    border: 5px solid #7D7C7C; 
+    background: none;
+    border-radius: 25px;
+    width: 150px;
+    cursor: pointer; 
+}
+
+button:hover{
+    border-color: #7D7C7C dotted; 
 }
