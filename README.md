@@ -40,4 +40,4 @@ The Stone Scissor Paper website is licensed under the [MIT License](LICENSE), wh
 
 ## About the Author
 
-This website is developed and maintained by [Your Name or Organization](https://yourwebsite.com). If you have any questions, feedback, or suggestions for improvement, please don't hesitate to get in touch. We appreciate your support and hope you enjoy playing Stone Scissor Paper!
+This website is developed and maintained by [Naveen](https://github.com/naveenairani). If you have any questions, feedback, or suggestions for improvement, please don't hesitate to get in touch. We appreciate your support and hope you enjoy playing Stone Scissor Paper!
