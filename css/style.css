@@ -104,3 +104,25 @@ button{
 button:hover{
     border-color: #7D7C7C dotted; 
 }
+.logs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: #191717;
+}
+.log_title{
+    font-size: 25px;
+    color: #CCC8AA;
+}
+.logs #logs_p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.log_underline{
+    display: inline;
+    border-bottom: 2px rgb(126, 167, 230) dashed;
+    width: 70%;
+}

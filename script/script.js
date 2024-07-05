@@ -1,3 +1,5 @@
+const { Carousel } = require("bootstrap");
+
 function mycanvas(){
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -16,6 +18,10 @@ function stoneselect(){
     var computecanvas = computercanvas();
     var stone = "stone"
     var winer = winner();
+    var history_p = document.createElement('p');
+    var history_logs = document.getElementById('logs')
+    history_p.id = "logs_p";
+    history_p.style = "font-size=medium"
     if(computecanvas.computercanvas == "stone"){
         winer.win.innerText = 'Tie';
         var scoreasString = winer.tieScore.innerText;
@@ -37,7 +43,8 @@ function stoneselect(){
         scoreaswinInt += 1;
         winer.myScore.innerText = scoreaswinInt.toString();
     }
-    return {stone:stone, cresult:computecanvas.computercanvas};
+    history_p.innerText = `You: ${stone}       Computer: ${computecanvas.computercanvas}`;
+    return {stone:stone, cresult:computecanvas.computercanvas}, history_logs.appendChild(history_p);
 }
 
 
@@ -52,6 +59,9 @@ function paperselect(){
     var computecanvas = computercanvas();
     var paper = "paper"
     var winer = winner();
+    var history_p = document.createElement('p');
+    var history_logs = document.getElementById('logs')
+    history_p.id = "logs_p";
     if(computecanvas.computercanvas == "paper"){
         winer.win.innerText = 'Tie';
         var scoreasString = winer.tieScore.innerText;
@@ -73,7 +83,8 @@ function paperselect(){
         scoreaswinInt += 1;
         winer.myScore.innerText = scoreaswinInt.toString();
     }
-    return {paper:paper, cresult:computecanvas.computercanvas};
+    history_p.innerText = `You: ${paper}       Computer: ${computecanvas.computercanvas}`;
+    return {paper:paper, cresult:computecanvas.computercanvas},history_logs.appendChild(history_p);
 }
 
 
@@ -88,6 +99,9 @@ function scissorselect(){
     var computecanvas = computercanvas();
     var scissor = "scissor"
     var winer = winner();
+    var history_p = document.createElement('p');
+    var history_logs = document.getElementById('logs');
+    history_p.id = "logs_p";
     if(computecanvas.computercanvas == "scissor"){
         winer.win.innerText = 'Tie';
         var scoreasString = winer.tieScore.innerText;
@@ -110,7 +124,8 @@ function scissorselect(){
         scoreaswinInt += 1;
         winer.myScore.innerText = scoreaswinInt.toString(); 
     }
-    return {scissor:scissor, cresult:computecanvas.computercanvas};
+    history_p.innerText = `You: ${scissor}       Computer: ${computecanvas.computercanvas}`;
+    return {scissor:scissor, cresult:computecanvas.computercanvas},history_logs.appendChild(history_p);
 }
 
 
